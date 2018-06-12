@@ -18,7 +18,7 @@ class SuitTest {
   @Test
   void testToString() {
     for(Suit suit : Suit.values()) {
-      assertTrue(suit.toString().equals(SUIT_SYMBOLS[suit.ordinal()]));
+      assertEquals(SUIT_SYMBOLS[suit.ordinal()], suit.toString());
       System.out.println(suit);
     }
   }
